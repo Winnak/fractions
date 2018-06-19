@@ -5,9 +5,9 @@ NOTE: Fractions are not reduced/minimized on arithmetic-operations, but are redu
 
 Usage:
 
-Include header in your project.
+Copy [fractions.h](fractions.h) into your project.
 
-```[cpp]
+```cpp
 auto f1 = Fraction<int32_t, int32_t>{-3, 9};
 printf("f1: %s\n", f1.c_str());
 f1.reduce();
@@ -15,10 +15,10 @@ printf("f1-reduced: %s\n", f1.c_str());
 
 auto f2 = frac32::from_float(0.5248f);
 printf("f2: %s\n", f2.to_string().c_str());
+```
 
-...
-
-output:
+Output:
+```
 f1: -3/9
 f1-reduced: -1/3
 f2: 328/625
