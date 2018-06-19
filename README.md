@@ -9,9 +9,9 @@ Copy [fractions.h](fractions.h) into your project.
 
 ```cpp
 auto f1 = Fraction<int32_t, int32_t>{-3, 9};
-printf("f1: %s\n", f1.c_str());
+printf("f1: %s\n", f1.to_string().c_str());
 f1.reduce();
-printf("f1-reduced: %s\n", f1.c_str());
+printf("f1-reduced: %s\n", f1.to_string().c_str());
 
 auto f2 = frac32::from_float(0.5248f);
 printf("f2: %s\n", f2.to_string().c_str());
